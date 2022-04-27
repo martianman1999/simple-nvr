@@ -79,3 +79,11 @@ Each camera on a Raspberry Pi 3b+ writing to an external HDD seems to use ~9% CP
 ![CPU use](/images/cpu-use.png)
 
 Two _ieGeek_ cameras bought on Amazon run well when paired with a Raspberry Pi 3+. I suspect the Pi could easily handle more than 2 cameras given the CPU consumption.
+
+### Note
+When running Ubuntu Server Headless there are many dependencies that are not included
+sudo apt install nodejs npm ffmpeg
+npm install pm2 -g
+The application will still most likley still error out, you can view this by running `pm2 list` or `sudo pm2 list`
+That will show if the porgam is running, view what is missing at `/home/USER/.pm2/logs/nvr-error.log`
+Also this fork adds the syntax needed for multiple cameras 
