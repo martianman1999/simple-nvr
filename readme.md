@@ -85,8 +85,11 @@ When running Ubuntu Server Headless there are many dependencies that are not inc
 
 `sudo apt install nodejs npm ffmpeg`
 
-npm install pm2 -g
+`npm install pm2 -g`
 
 The application will still most likley still error out, you can view this by running `pm2 list` or `sudo pm2 list`
+
 That will show if the porgam is running, view what is missing at `/home/USER/.pm2/logs/nvr-error.log`
+
 Also this fork adds the syntax needed for multiple cameras 
+
