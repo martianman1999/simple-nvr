@@ -20,7 +20,7 @@ To get started, the following steps must be taken:
 pm2 start nvr.js --name nvr
 ```
 
-The `nvr.js` server will record the videos in 5 minute clips, and combine them at 01:00 UTC every day into a 24 hour video file.
+The `nvr.js` server will record the videos in 5 minute clips, and combine them at 04:00 UTC every day into a 24 hour video file.
 Running `nvr-browser.js` will start a webserver at `http://localhost:3000` that will enable you to browser the folder structure and view video files (see example image below)
 
 ![Video example](/images/video-example.png)
