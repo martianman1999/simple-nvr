@@ -88,7 +88,7 @@ class CameraStream {
         new CronJob('0 1 * * *', async () => {
             try {
                 const yesterday = new Date()
-                yesterday.setUTCHours(-24, 0, 0, 0);
+                yesterday.setUTCHours(4, 0, 0, 0);
                 const dayDir = dayDirectory(this.storagePath, yesterday)
                 await videoConcatinator.combineFilesInDirectory(dayDir, true);
             } catch (error) {
